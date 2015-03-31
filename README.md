@@ -44,14 +44,14 @@ GIREMI was implemented using a combination of R, Perl and C codes.
   `-s, --strand       INT    0:non-strand specific RNA-Seq; 1: strand-specific RNA-Seq and read 1 (first read for the paired-end reads) is sense to RNA; 2: strand-specific RNA-Seq and read 1 is anti-sense to RNA [default: 0]`
 
 
-Required format of the file containing the list of SNVs (-l option):
+##### Required format of the file containing the list of SNVs (-l option):
 
-column 1 : The name of the chromosome or scaffold
-column 2 : The starting position of the SNV in the chromosome or scaffold (0-based)
-column 3 : The ending position of the SNV in the chromosome or scaffold (1-based)
-column 4 : The name of the gene harboring this SNV; “Inte”: the SNV resides in the Intergenic region
-column 5 : A flag, 1: the SNV belongs to dbSNP; 0: otherwise
-column 6 : Strand (+ or -); “#” for “Inte” gene
+column 1 : The name of the chromosome or scaffold   
+column 2 : The starting position of the SNV in the chromosome or scaffold (0-based)   
+column 3 : The ending position of the SNV in the chromosome or scaffold (1-based)   
+column 4 : The name of the gene harboring this SNV; “Inte”: the SNV resides in the Intergenic region   
+column 5 : A flag, 1: the SNV belongs to dbSNP; 0: otherwise   
+column 6 : Strand (+ or -); “#” for “Inte” gene  
 
 
 Format of the output file:
