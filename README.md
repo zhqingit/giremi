@@ -17,12 +17,12 @@ A paper describing GIREMI is published at Nature Methods.
 
 ### Dependent libraries or software
 
-- HTSlib[1] : for accessing SAM/BAM files
+- HTSlib(https://github.com/samtools/htslib) : for accessing SAM/BAM files
 Please make sure your dynamic library path in your configuration file includes the directory in which HTSlib is installed.
 - samtools(http://samtools.sourceforge.net/) : for generating the faidx index of reference genome sequence
 Please use “samtools faidx” to generate the index before running GIREMI.
 - R(http://www.r-project.org/) : for general linear model training and prediction
-[1]:https://github.com/samtools/htslib
+
 ### Installation
 
 GIREMI was implemented using a combination of R, Perl and C codes.  
