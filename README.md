@@ -7,7 +7,7 @@ GIREMI calculates the mutual information (MI) of the mismatch pairs identified i
 
 ### Detailed information on GIREMI and citation
 
-A paper describing GIREMI is published at Nature Methods.  
+A paper describing GIREMI is published at Nature Methods(http://www.nature.com/nmeth/journal/v12/n4/full/nmeth.3314.html).  
 
 
 ### System requirement
