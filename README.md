@@ -61,22 +61,22 @@ NOTE: This output file includes a rich list of information about the SNVs. Not a
 - chr                     : Name of the chromosome or scaffold     
 - coordinate              : Position of the SNVs in the chromosome or scaffold (1-based)    
 - strand                  : Strand information
-ifSNP                   : 1, If the SNV is included in dbSNP; 0: otherwise.
-gene                    : Name of the gene harboring this SNV
-reference_base          : The nucleotide of this SNV in the reference chromosome (+ strand)
-upstream_1base          : The upstream neighboring nucleotide of this SNV in the reference chromosome (+ strand)
-downstream_1base        : The downstream neighboring nucleotide of this SNV in the reference chromosome  (+ strand)
-major_base              : The major nucleotide of the SNV in the RNA-seq data     
-major_count             : Number of reads with the major nucleotide    
-tot_count               : Total number of reads covering this SNV in the RNA-Seq data   
-major_ratio             : The ratio of major nucleotide (major_count/tot_count)   
-MI                      : The mutual information of this SNV if a value exists   
-pvalue_mi               : P-value from the MI test if applicable    
-estimated_allelic_ratio : Estimated allelic ratio of the gene harboring this SNV
-ifNEG                   : 1: this SNV was a negative control in the training data  
-RNAE_t                  : Type of RNA editing or RNA-DNA mismatches (A-to-G, etc)
-A,C,G,T                 : Numbers of reads with specific nucleotides at this site
-ifRNAE                  : 1: the SNV is predicted as an RNA editing site based on MI analysis; 
+- ifSNP                   : 1, If the SNV is included in dbSNP; 0: otherwise.
+- gene                    : Name of the gene harboring this SNV
+- reference_base          : The nucleotide of this SNV in the reference chromosome (+ strand)
+- upstream_1base          : The upstream neighboring nucleotide of this SNV in the reference chromosome (+ strand)
+- downstream_1base        : The downstream neighboring nucleotide of this SNV in the reference chromosome  (+ strand)
+- major_base              : The major nucleotide of the SNV in the RNA-seq data     
+- major_count             : Number of reads with the major nucleotide    
+- tot_count               : Total number of reads covering this SNV in the RNA-Seq data   
+- major_ratio             : The ratio of major nucleotide (major_count/tot_count)   
+- MI                      : The mutual information of this SNV if a value exists   
+- pvalue_mi               : P-value from the MI test if applicable    
+- estimated_allelic_ratio : Estimated allelic ratio of the gene harboring this SNV
+- ifNEG                   : 1: this SNV was a negative control in the training data  
+- RNAE_t                  : Type of RNA editing or RNA-DNA mismatches (A-to-G, etc)
+- A,C,G,T                 : Numbers of reads with specific nucleotides at this site
+- ifRNAE                  : 1: the SNV is predicted as an RNA editing site based on MI analysis; 
 						  2: the SNV is predicted as an RNA editing site based on GLM 
 						  0: the SNV is not predicted as an RNA editing site
   
