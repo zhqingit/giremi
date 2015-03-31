@@ -31,7 +31,7 @@ GIREMI was implemented using a combination of R, Perl and C codes.
 
 #### Usage: giremi.pl [options] in1.bam [in2.bam [...]]
 
-##### NOTE:   
+###### NOTE:   
 -  The bam files should contain all final mapped reads in all chromosomes.
 -  If multiple bam files are provided as input to GIREMI, they are handled as replicates that can be combined into one data set to generate one set of editing sites.  If it is desired that biological replicates be analyzed separately, each file should be run individually through GIREMI.
 
@@ -56,7 +56,7 @@ GIREMI was implemented using a combination of R, Perl and C codes.
 
 ##### Format of the output file:
 
-NOTE: This output file includes a rich list of information about the SNVs. Not all sites in this file are predicted as RNA editing sites, see the ifRNAE field.
+######NOTE: This output file includes a rich list of information about the SNVs. Not all sites in this file are predicted as RNA editing sites, see the ifRNAE field.
 
 - chr                     : Name of the chromosome or scaffold     
 - coordinate              : Position of the SNVs in the chromosome or scaffold (1-based)    
