@@ -1,37 +1,37 @@
-## giremi
+# giremi
 GIREMI is a method that can identify RNA editing sites using one RNA-seq data set without requiring genome sequence data.  
 
-# How GIREMI works?
+### How GIREMI works?
 
 GIREMI calculates the mutual information (MI) of the mismatch pairs identified in the RNA-seq reads to distinguish RNA editing sites and SNPs. It also trains a generalized linear model (GLM) to achieve enhanced predictive power, which makes use of sequence bias information and the difference between the mismatch ratio of the unknown single nucleotide variants (SNVs) and the estimated allelic ratio of the gene.
 
-# Detailed information on GIREMI and citation
+### Detailed information on GIREMI and citation
 
 A paper describing GIREMI is published at Nature Methods.  
 
 
-# System requirement
+### System requirement
 
 - Currently GIREMI supports Linux 64bit (Ubuntu, Red Hat, SUSE and others) system. 
 - At least 8 GB of memory is required to process typical human data sets.
 
-# Dependent libraries or software
+### Dependent libraries or software
 
-*HTSlib : for accessing SAM/BAM files
+- HTSlib : for accessing SAM/BAM files
 Please make sure your dynamic library path in your configuration file includes the directory in which HTSlib is installed.
-*samtools : for generating the faidx index of reference genome sequence
+- samtools : for generating the faidx index of reference genome sequence
 Please use “samtools faidx” to generate the index before running GIREMI.
-*R : for general linear model training and prediction
+- R : for general linear model training and prediction
 
-# Installation
+### Installation
 
 GIREMI was implemented using a combination of R, Perl and C codes.  
 
-# Quickstart
+### Quickstart
 
 Usage: giremi.pl [options] in1.bam [in2.bam [...]]
 
-*NOTE:   
+NOTE:   
 -  The bam files should contain all final mapped reads in all chromosomes.
 -  If multiple bam files are provided as input to GIREMI, they are handled as replicates that can be combined into one data set to generate one set of editing sites.  If it is desired that biological replicates be analyzed separately, each file should be run individually through GIREMI.
 
