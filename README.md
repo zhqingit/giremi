@@ -54,10 +54,10 @@ GIREMI was implemented using a combination of R, Perl and C codes.
 - column 6 : Strand (+ or -); “#” for “Inte” gene  
 
 
-Format of the output file:
+##### Format of the output file:
 
 NOTE: This output file includes a rich list of information about the SNVs. Not all sites in this file are predicted as RNA editing sites, see the ifRNAE field.
-
+`
 chr                     : Name of the chromosome or scaffold     
 coordinate              : Position of the SNVs in the chromosome or scaffold (1-based)    
 strand                  : Strand information
@@ -79,3 +79,4 @@ A,C,G,T                 : Numbers of reads with specific nucleotides at this sit
 ifRNAE                  : 1: the SNV is predicted as an RNA editing site based on MI analysis; 
 						  2: the SNV is predicted as an RNA editing site based on GLM 
 						  0: the SNV is not predicted as an RNA editing site
+`  
