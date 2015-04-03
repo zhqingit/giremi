@@ -22,6 +22,6 @@ if ($#ARGV>0){
 	print $cmd,"\n";
 	system($cmd);
 
-	print "Analysis DONE!";
+	print "Analysis DONE!\n";
 }
 
