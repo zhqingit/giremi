@@ -31,10 +31,10 @@ dat = cbind(dat,0)
 colnames(dat) <- c("chr","coordinate","strand","ifSNP","gene","reference_base","upstream_1base","downstream_1base","major_base","major_count","tot_count","major_ratio","if_MI","MI","pvalue_MI","estimated_allelic_ratio","ifNEG","if_GLM","pvalue_GLM","RNAE_t","A","C","G","T","ifRNAE")
 ids = which(dat[,"major_base"]=="N")
 if (length(ids)>0) dat = dat[-ids,] 
-dat[rownames(subset(dat,pvalue_MI>0 & pvalue_MI<=0.05 & ifNEG==0)),"ifRNAE"]= 1
-dat.pos <- subset(dat, pvalue_MI>0 & pvalue_MI <= 0.01 & ifNEG==0 & RNAE_t == "AG")
+dat[rownames(subset(dat,pvalue_MI>0 & pvalue_MI<=0.05 & ifSNP==0)),"ifRNAE"]= 1
+dat.pos <- subset(dat, pvalue_MI>0 & pvalue_MI <= 0.01 & ifSNP==0 & RNAE_t == "AG")
 if (nrow(dat.pos)==0){
-dat.pos <- subset(dat, pvalue_MI>0 & pvalue_MI <= 0.05 & ifNEG==0 & RNAE_t == "AG")
+dat.pos <- subset(dat, pvalue_MI>0 & pvalue_MI <= 0.05 & ifSNP==0 & RNAE_t == "AG")
 }
 dat.neg <- subset(dat,ifNEG == 1)
 #dat.neg <- subset(dat,ifNEG == 1 & RNAE_t=="AG")
