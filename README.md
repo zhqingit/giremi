@@ -29,7 +29,7 @@ GIREMI was implemented using a combination of R, Perl and C codes.
 
 ### Quickstart
 
-#### Usage: `giremi.pl [options] in1.bam [in2.bam [...]]`
+#### Usage: `giremi [options] in1.bam [in2.bam [...]]`
 
 ###### NOTE:   
 -  The bam files should contain all final mapped reads in all chromosomes.
